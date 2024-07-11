@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <button class="nav-btn" onclick="location.href='home.html'">Home</button>
+            <div class="dropdown">
+                <button id="categories-btn">Categories</button>
+                <div class="dropdown-content" id="categories-container"></div>
+            </div>
+        </nav>
+        <div class="cart">
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="product-page">
+            <div class="product-slider">
+                <img src="https://m.media-amazon.com/images/I/61HrWjOTJiL._SX679_.jpg" alt="Product 3">
+                <img src="https://m.media-amazon.com/images/I/61Av8yELCnL._SX679_.jpg" alt="Product 3">
+                <img src="https://m.media-amazon.com/images/I/61AabuU14pL._SX679_.jpg" alt="Product 3">
+                <img src="https://m.media-amazon.com/images/I/61gqSGGmfJL._SX679_.jpg" alt="Product 3">
+                <img src="https://m.media-amazon.com/images/I/51B6G-OmTBS._SX679_.jpg" alt="Product 3">
+                <img src="https://m.media-amazon.com/images/I/51O3d0QLXES._SX679_.jpg" alt="Product 3">
+                <div class="nav">
+                    <i class="fas fa-chevron-left" id="prev-slide"></i>
+                    <i class="fas fa-chevron-right" id="next-slide"></i>
+                </div>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(3)">Add to Cart</button>
+            <div class="product-info" data-id="3">
+                <h2>OnePlus 9</h2>
+                <h4>Product Description</h4>
+                <ul class="a-unordered-list a-vertical a-spacing-mini">
+                    <li class="a-spacing-mini"><span class="a-list-item">6.55" Fluid AMOLED Display</span></li>
+                    <li class="a-spacing-mini"><span class="a-list-item">Snapdragon 888 Processor</span></li>
+                    <li class="a-spacing-mini"><span class="a-list-item">Triple Camera System</span></li>
+                    <li class="a-spacing-mini"><span class="a-list-item">Warp Charge 65T</span></li>
+                    <li class="a-spacing-mini"><span class="a-list-item">120Hz Refresh Rate</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="product3.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>

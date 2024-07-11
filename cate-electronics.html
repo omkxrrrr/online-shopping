@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping - Electronics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <button class="nav-btn" onclick="location.href='home.html'">Home</button>
+            <div class="dropdown">
+                <button id="categories-btn">Categories</button>
+                <div class="dropdown-content" id="categories-container"></div>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <center><h2 aria-hidden="true">Electronics</h2></center>
+        <div id="products-container" class="product-container-cate">
+            <!-- Product details will be dynamically inserted here -->
+        </div>
+    </main>
+    <script src="data.js"></script>
+    <script src="cate-electronics.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCartCount();
+            loadProducts('Electronics'); // Load only Electronics products
+        });
+    </script>
+</body>
+</html>

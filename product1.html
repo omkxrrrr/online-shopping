@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <button class="nav-btn" onclick="location.href='home.html'">Home</button>
+            <div class="dropdown">
+                <button id="categories-btn">Categories</button>
+                <div class="dropdown-content" id="categories-container"></div>
+            </div>
+        </nav>
+        <div class="cart">
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="product-page" >
+            <div class="product-slider" id="product-slider">
+                <img src="https://m.media-amazon.com/images/I/81cjnxL6jbL._SX1000_.jpg" alt="Product 1">
+                <img src="https://m.media-amazon.com/images/I/71Jb87JU4+L._SX679_.jpg" alt="Product 1">
+                <img src="https://m.media-amazon.com/images/I/81p7ZAYrcmL._SX679_.jpg" alt="Product 1">
+                <img src="https://m.media-amazon.com/images/I/71aecQ4dWQL._SX679_.jpg" alt="Product 1">
+                <img src="https://m.media-amazon.com/images/I/71DtJ-j+iuL._SX679_.jpg" alt="Product 1">
+                <img src="https://m.media-amazon.com/images/I/81WewRa8flL._SX679_.jpg" alt="Product 1">
+                <div class="nav">
+                    <i class="fas fa-chevron-left" id="prev-slide"></i>
+                    <i class="fas fa-chevron-right" id="next-slide"></i>
+                </div>
+            </div><br>
+            <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+            <div class="product-info" data-id="1">
+                <h2>Samsung F54 5G</h2>
+                <h4>Product Description</h4>
+                <p>Samsung Galaxy F54 5G mobile was launched on 6th June 2023. The phone comes with:</p>
+                <ul>
+                    <li>120 Hz refresh rate</li>
+                    <li>6.70-inch touchscreen display offering a resolution of 2400x1080 pixels (FHD+)</li>
+                </ul>
+                <p>Specifications:</p>
+                <ul>
+                    <li>Processor: Octa-core Samsung Exynos 1380</li>
+                    <li>RAM: 8GB</li>
+                    <li>OS: Android 13 with OneUI 5</li>
+                    <li>Battery: 6000mAh non-removable, supports proprietary fast charging</li>
+                </ul>
+                <p>Cameras:</p>
+                <ol>
+                    <li>Rear Camera Setup:
+                        <ul>
+                            <li>108-megapixel primary camera</li>
+                            <li>8-megapixel camera</li>
+                            <li>2-megapixel camera</li>
+                        </ul>
+                    </li>
+                    <li>Front Camera: 32-megapixel sensor</li>
+                </ol>
+                <p>Storage:</p>
+                <ul>
+                    <li>256GB of inbuilt storage</li>
+                    <li>Expandable via microSD card (up to 1000GB)</li>
+                </ul>
+                
+                            </div>
+        </div>
+    </main>
+    <script src="product1.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>

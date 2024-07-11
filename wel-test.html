@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Online Shopping</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #EEEEEE;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: #222831;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        header h1 {
+            color: #76ABAE;
+            margin: 0;
+        }
+
+        .nav-btn {
+            background: #76ABAE;
+            color: #EEEEEE;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .nav-btn:hover {
+            background: #555;
+        }
+
+        .welcome-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .welcome-text {
+            font-size: 3em;
+            color: #222831;
+            animation: fadeIn 2s ease-out forwards;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .background-animation {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .item {
+            position: absolute;
+            width: 50px;
+            opacity: 0.5;
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        @keyframes move1 {
+            0% {
+                transform: translate(-100%, -100%);
+            }
+            100% {
+                transform: translate(100%, 100%);
+            }
+        }
+
+        @keyframes move2 {
+            0% {
+                transform: translate(100%, -100%);
+            }
+            100% {
+                transform: translate(-100%, 100%);
+            }
+        }
+
+        @keyframes move3 {
+            0% {
+                transform: translate(-100%, 100%);
+            }
+            100% {
+                transform: translate(100%, -100%);
+            }
+        }
+
+        @keyframes move4 {
+            0% {
+                transform: translate(100%, 100%);
+            }
+            100% {
+                transform: translate(-100%, -100%);
+            }
+        }
+
+        .animation-1 {
+            animation: move1 30s linear infinite;
+        }
+
+        .animation-2 {
+            animation: move2 25s linear infinite;
+        }
+
+        .animation-3 {
+            animation: move3 20s linear infinite;
+        }
+
+        .animation-4 {
+            animation: move4 35s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Welcome to Online Shopping</h1>
+            <div>
+                <button class="nav-btn" onclick="location.href='login.html'">Login</button>
+                <button class="nav-btn" onclick="location.href='register.html'">Register</button>
+            </div>
+        </nav>
+    </header>
+    <div class="background-animation">
+        <!-- Phone Icons -->
+        <div class="item animation-1" style="top: 10%; left: 10%;"><img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone"></div>
+        <div class="item animation-2" style="top: 20%; left: 20%;"><img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone"></div>
+        <div class="item animation-3" style="top: 30%; left: 30%;"><img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone"></div>
+        
+        <!-- T-Shirt Icons -->
+        <div class="item animation-4" style="top: 40%; left: 40%;"><img src="https://img.icons8.com/ios-filled/50/000000/t-shirt.png" alt="T-Shirt"></div>
+        <div class="item animation-1" style="top: 50%; left: 50%;"><img src="https://img.icons8.com/ios-filled/50/000000/t-shirt.png" alt="T-Shirt"></div>
+        <div class="item animation-2" style="top: 60%; left: 60%;"><img src="https://img.icons8.com/ios-filled/50/000000/t-shirt.png" alt="T-Shirt"></div>
+        
+        <!-- Electronics Icons -->
+        <div class="item animation-3" style="top: 70%; left: 70%;"><img src="https://img.icons8.com/ios-filled/50/000000/electronics.png" alt="Electronics"></div>
+        <div class="item animation-4" style="top: 80%; left: 80%;"><img src="https://img.icons8.com/ios-filled/50/000000/electronics.png" alt="Electronics"></div>
+        <div class="item animation-1" style="top: 90%; left: 90%;"><img src="https://img.icons8.com/ios-filled/50/000000/electronics.png" alt="Electronics"></div>
+    </div>
+    <div class="welcome-container">
+        <div class="welcome-text">Welcome to Online Shopping</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <button class="nav-btn" onclick="location.href='home.html'">Home</button>
+            <div class="dropdown">
+                <button id="categories-btn">Categories</button>
+                <div class="dropdown-content" id="categories-container"></div>
+            </div>
+        </nav>
+        <div class="cart">
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                (<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="product-page" >
+            <div class="product-slider">
+                <img src="https://m.media-amazon.com/images/I/71d7rfSl0wL._SX979_.jpg" alt="Product 2">
+                <img src="https://m.media-amazon.com/images/I/51wKeZuX6rL._SX679_.jpg" alt="Product 2">
+                <img src="https://m.media-amazon.com/images/I/712CBkmhLhL._SX679_.jpg" alt="Product 2">
+                <img src="https://m.media-amazon.com/images/I/81BnjSLm2oL._SX679_.jpg" alt="Product 2">
+                <img src="https://m.media-amazon.com/images/I/613xywt-yvL._SX679_.jpg" alt="Product 2">
+                <div class="nav">
+                    <i class="fas fa-chevron-left" id="prev-slide"></i>
+                    <i class="fas fa-chevron-right" id="next-slide"></i>
+                </div>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(2)">Add to Cart</button>
+            <div class="product-info" data-id="2">
+                <h2>Apple iPhone 15</h2>
+                <h4>Product Description</h4>
+                <ul class="a-unordered-list a-vertical a-spacing-mini">  <li class="a-spacing-mini"><span class="a-list-item"> DYNAMIC ISLAND COMES TO IPHONE 15 — Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can see who’s calling, track your next ride, check your flight status, and so much more.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> INNOVATIVE DESIGN — iPhone 15 features a durable color-infused glass and aluminum design. It’s splash, water, and dust resistant. The Ceramic Shield front is tougher than any smartphone glass. And the 6.1" Super Retina XDR display is up to 2x brighter in the sun compared to iPhone 14.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> 48MP MAIN CAMERA WITH 2X TELEPHOTO — The 48MP Main camera shoots in super-high resolution. So it’s easier than ever to take standout photos with amazing detail. The 2x optical-quality Telephoto lets you frame the perfect close-up.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> NEXT-GENERATION PORTRAITS — Capture portraits with dramatically more detail and color. Just tap to shift the focus between subjects — even after you take the shot.  </span></li>  <li class="a-spacing-mini"><span class="a-list-item"> POWERHOUSE A16 BIONIC CHIP — The superfast chip powers advanced features like computational photography, fluid Dynamic Island transitions, and Voice Isolation for phone calls. And A16 Bionic is incredibly efficient to help deliver great all-day battery life.  </span></li>  </ul>
+            </div>
+        </div>
+    </main>
+    <script src="product2.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>

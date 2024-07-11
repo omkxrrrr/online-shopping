@@ -1,0 +1,360 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Aligns items with space between them */
+    align-items: center; /* Centers items vertically */
+}
+
+nav {
+    display: inline-block;
+    max-width: 100%;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.cart {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.cart i {
+    margin-right: 0.5em;
+}
+
+main {
+    padding: 2em;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 100%;
+}
+
+.left-content, .right-content {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #e9e8e8e3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    text-align: center;
+    max-width: 100%;
+}
+
+.product-container-cate {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 400px;
+}
+
+.product {
+    max-width: 250px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+.product img {
+    max-width: 150px;
+    margin-right: 1em;
+    width: 100px;
+}
+
+button.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button.add-to-cart:hover {
+    background-color: #218838;
+}
+
+.nav-btn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin: 0 1em;
+    padding: 7px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px; /* Added border-radius for curved edges */
+}
+
+.nav-btn:hover {
+    background-color: #28a745;
+}
+
+#categories-container {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Updated background color */
+    width: 200px; /* Adjusted width for better fit */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    z-index: 1;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    margin-top: 8px; /* Slightly increased margin */
+    padding: 10px 0; /* Padding inside the container */
+    right: 0; /* Align container to the right side of its parent */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Added margin for spacing */
+}
+
+#categories-btn {
+    color: white;
+    padding: 7px 14px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Added border-radius for curved edges */
+    background-color: transparent;
+}
+
+/* Dropdown button hover effect */
+#categories-btn:hover {
+    background-color: #28a745;
+}
+
+/* Links inside the dropdown */
+#categories-container a {
+    color: #333333; /* Darker text color */
+    padding: 12px 20px; /* Slightly larger padding */
+    text-decoration: none;
+    display: block;
+    font-size: 16px; /* Slightly larger font size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Change color of dropdown links on hover */
+#categories-container a:hover {
+    background-color: #f2f2f2; /* Lighter background color on hover */
+    color: #28a745; /* Change text color on hover */
+}
+
+.button-css{
+    color: white;
+    padding: 5px 14px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.button-css:hover{
+    background-color: #28a745;
+}
+
+.product-page {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-slider {
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-slider img {
+    width: 100%;
+    display: none;
+}
+
+.product-slider img.active {
+    display: block;
+}
+
+.product-slider .nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.product-slider .nav i {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5em;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item img {
+    max-width: 150px;
+    margin-right: 1em;
+    width: 100px;
+}
+
+.cart-item button.remove-from-cart {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.cart-item button.remove-from-cart:hover {
+    background-color: #c82333;
+}
+
+.checkout-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2em;
+    display: block;
+    width: 100%;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}
+
+/* Form container styles */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222831;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #222831;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #76ABAE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-btn:hover {
+    background-color: #555;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #222831;
+}
+
+.register-link a {
+    color: #76ABAE;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
